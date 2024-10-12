@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Afacad Flux", sans-serif;
+    height: 100vh;
+}
+.header{
+    color: #FF5A5F;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.header i{
+    font-size: 3rem;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.hero-image{
+    max-width: 500px;
+    padding: 30px;
+}
+.section p, section h1{
+    font-size: 1rem;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+.card{
+    padding: 15px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+.title{
+    inline-size: 200px;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: gray;
+}
+.person-img{
+    width: 200px;
+}
