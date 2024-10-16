@@ -38,11 +38,17 @@ body{
     font-size: 1rem;
 }
 .card-container{
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
+}
+.cards-list {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
     justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-    flex-wrap: wrap;
+    margin: 2rem;
 }
 .card{
     padding: 15px;
@@ -50,6 +56,16 @@ body{
     height: 100%;
     margin-bottom: 1rem;
     line-height: 2;
+    position: relative;
+}
+.card-badge{
+    position: absolute;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 .title{
     inline-size: 200px;
@@ -62,4 +78,11 @@ body{
 }
 .person-img{
     width: 200px;
+}
+
+
+@media screen and (max-width: 800px){
+    .cards-list{
+        justify-content: flex-start;
+    }
 }
